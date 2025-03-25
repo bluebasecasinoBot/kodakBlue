@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    /* outline: 1px dashed #171717; */
+}
+body{
+    overflow: hidden;
+}
+@font-face{
+    font-family: Mantis Rumble_PersonalUseOnly;
+    src:url('./assets/mantis_rumble/Mantis\ Rumble_PersonalUseOnly.ttf')
+}
+@font-face {
+    font-family: this_cafe;
+    src: url('./assets/this_cafe/This\ Cafe.ttf');
+}
+@font-face {
+    font-family: sunrise;
+    src: url('./assets/Rajdhani-Medium.ttf');
+}
+@font-face {
+    font-family: sticker;
+    src: url('./assets/Poppins-Medium.ttf');
+}
+.click{
+    cursor: pointer;
+    transition: transform .3s linear;
+}
+.click:hover{transform: scale(.9);}
+h1{
+    font-weight: 100;
+    /* color: #01213c; */
+}
+.mobile_menu p{
+    height:100%;
+    width:100%;
+    padding:10px
+}
+.animate
+{
+    animation-name: pulse;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes pulse
+{
+    0%
+    {
+        transform: scale(1);
+    }
+
+    100%
+    {
+        transform: scale(1.5);
+    }
+}
+.rainbow_text
+{
+    animation: rain_bow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    /* color: #3788da86; */
+}
+
+.rainbow__text
+{
+    background:#884711;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text;
+
+    /* animation: rain_bow__text; */
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    transition: background linear .5s;
+    animation-timing-function: linear;
+}
+
+@keyframes rain_bow__text
+{
+    0%
+    {
+        background:linear-gradient(to bottom right,#FF0000,#FFA500,#FFFF00,#008000,#0000FF,#4B0082,#EE82EE );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
+    }
+    30%
+    {
+        background:linear-gradient(to top left,#FF0000,#FFA500,#FFFF00,#008000,#0000FF,#4B0082,#EE82EE );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
+    }
+    60%
+    {
+        background:linear-gradient(to top right,#FF0000,#FFA500,#FFFF00,#008000,#0000FF,#4B0082,#EE82EE );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
+    }
+    90%
+    {
+        background:linear-gradient(to bottom left,#FF0000,#FFA500,#FFFF00,#008000,#0000FF,#4B0082,#EE82EE );
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip:text;
+    }
+}
+
+@keyframes rain_bow
+{
+    0%
+    {
+        color:#3c0202;
+        transform: rotate(0deg);
+    }
+    10%
+    {
+        color: #591612;
+    }
+    20%
+    {
+        color: #884711;
+        transform: rotate(45deg);
+    }
+    30%
+    {
+        color:#59210d ;
+    }
+    40%
+    {
+        color:#443801 ;
+        transform: rotate(-45deg);
+    }
+    50%
+    {
+        color: #42190a;
+    }
+    60%
+    {
+        color: #231703;
+        transform: rotate(0deg);
+    }
+    65%
+    {
+        color:#21050f;
+    }
+    70%
+    {
+        color: #25010e;
+    }
+    75%
+    {
+        color: #3c0202;
+    }
+    80%
+    {
+        color:#591612 ;
+    }
+    85%
+    {
+        color:#884711 ;
+    }
+    90%
+    {
+        color: #443801;
+    }
+    95%
+    {
+        color: #42190a;
+    }
+    100%
+    {
+        color: #59210d;
+    }
+    
+}
+
+
+.navBar
+{
+    background: #0047AB;
+  color: #FFFFFF;
+  font-weight: bold;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5), 
+              inset -2px -2px 5px rgba(255, 255, 255, 0.3), 
+              inset 2px 2px 5px rgba(0, 0, 0, 0.2); */
+  padding: 15px 25px;
+}
+.navBar p
+{
+    transition: all linear .3s;
+    opacity: .6;
+}
+.navBar p:hover
+{
+    opacity: 1;
+}
+
+.tabs_3d
+{
+    background-color: rgba(38, 131, 145, 0.704);
+    border: 2px dashed #fff;
+}
+
+.headers_clr
+{
+    color: #00C8FF;
+}
+
+.btns_style
+{
+    background-image: url('./assets/btnbg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:30px 50px;
+    color: #ffffff;
+    font-weight:700;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.btns_style:hover
+{
+    transform: scale(1.05);
+}
+
+.right-tab {
+    background: linear-gradient(145deg, #FFD700, #FFAA00);
+    color: #0066CC; /* Deep Blue text */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3), 
+                inset -2px -2px 5px rgba(255, 255, 255, 0.3), 
+                inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.ca_button_3d {
+    background: linear-gradient(180deg, #007BFF, #0056B3);
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 5px 0px #003D82, 0px 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .ca_button_3d:active {
+    box-shadow: 0px 3px 0px #003D82;
+    transform: translateY(2px);
+  }
+
+.bg_animation
+{
+    animation-name: container;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: none !important;
+    animation-direction: alternate-reverse;
+    transition: none !important;
+}
+
+@keyframes container{
+    0%
+    {
+        background-image: url(./assets/kodakMainbg.jpeg);
+    }
+
+    100%
+    {
+        background-image: url(./assets/kodakMainbg2.jpeg);
+    }
+}
+
+.floatMainPic
+{
+    animation-name: mainBg_float;
+    animation-duration: 5.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes mainBg_float
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    25%
+    {
+        transform: translateY(15px);
+    }
+    50%
+    {
+        transform: translateY(0px);
+    }
+    75%
+    {
+        transform: translateY(-15px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
