@@ -113,17 +113,17 @@ __SYD.ca_section = () =>{
                     class:"ca_button_3d"
                 },
                 [
-                    '0x1852B16e564f5413C45986D13442791B08C9D3B8'
+                    '-------------------------------------'
     
                 ],
                 {
                     events:{
                         onclick:() =>{
-                            navigator.clipboard.writeText('0x1852B16e564f5413C45986D13442791B08C9D3B8')
+                            navigator.clipboard.writeText('-------------------------------------')
                             __v['c_a'].textContent = 'Contract Address Copied'
     
                             const timer = setTimeout(() =>{
-                            __v['c_a'].textContent = '0x1852B16e564f5413C45986D13442791B08C9D3B8'
+                            __v['c_a'].textContent = '-------------------------------------'
                             clearTimeout(timer)
                             },1500)
                         }
