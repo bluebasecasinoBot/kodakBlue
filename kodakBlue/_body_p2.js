@@ -83,9 +83,6 @@ __SYD.btns__dex_buy = () =>{
         },
         [
             __c(
-                'a',{href:'https://dexscreener.com/solana/dwqozxmdqdhnkukkr2rft17dpjlai1r92ian6zegs9pu',target:'blank',style:`text-decoration:none;min-width:fit-content;`,class:'btns_style'},['Dex Tools'],{genericStyle:['bg_fit']}
-            ),
-            __c(
                 'a',{href:'https://dexscreener.com/solana/dwqozxmdqdhnkukkr2rft17dpjlai1r92ian6zegs9pu',target:'blank',style:`text-decoration:none;min-width:fit-content;`,class:'btns_style'},['Buy Token'],{genericStyle:['bg_fit']}
             ),
         ]
