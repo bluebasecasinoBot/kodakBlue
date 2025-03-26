@@ -1,4 +1,4 @@
-import { __SYD, __c, __sC, __p } from "./sydneyDom_v2.js";
+import { __SYD, __c, __sC, __p , __v} from "./sydneyDom_v2.js";
 
 
 __SYD.comm = () =>{
