@@ -121,6 +121,8 @@ __SYD.ca_section = () =>{
                         onclick:() =>{
                             navigator.clipboard.writeText('0x1F7AF73C84Fb0Add462Eb8E959CD8925fAe58EcB')
                             __v['c_a'].textContent = 'Contract Address Copied'
+
+                            alert('Contract Address Copied');
     
                             const timer = setTimeout(() =>{
                             __v['c_a'].textContent = '0x1F7AF73C84Fb0Add462Eb8E959CD8925fAe58EcB'
